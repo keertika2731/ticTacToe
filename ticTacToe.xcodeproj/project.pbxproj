@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B103B9211E1E2F960096F6C9 /* popUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B103B9201E1E2F960096F6C9 /* popUpViewController.swift */; };
+		B103B9271E1E7CA50096F6C9 /* board.png in Resources */ = {isa = PBXBuildFile; fileRef = B103B9261E1E7CA50096F6C9 /* board.png */; };
+		B103B92D1E1E8C120096F6C9 /* closeButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B103B92C1E1E8C120096F6C9 /* closeButton.png */; };
+		B103B92F1E1EAAB10096F6C9 /* congrats.png in Resources */ = {isa = PBXBuildFile; fileRef = B103B92E1E1EAAB10096F6C9 /* congrats.png */; };
+		B103B9371E1EB6C00096F6C9 /* playAgainButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B103B9361E1EB6C00096F6C9 /* playAgainButton.png */; };
+		B103B9391E1EB7C90096F6C9 /* BackToMenuButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B103B9381E1EB7C90096F6C9 /* BackToMenuButton.png */; };
 		B134B8651E1D475800B83109 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B134B8641E1D475800B83109 /* AppDelegate.swift */; };
 		B134B8671E1D475800B83109 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B134B8661E1D475800B83109 /* ViewController.swift */; };
 		B134B86A1E1D475800B83109 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B134B8681E1D475800B83109 /* Main.storyboard */; };
@@ -14,6 +20,8 @@
 		B134B86F1E1D475800B83109 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B134B86D1E1D475800B83109 /* LaunchScreen.storyboard */; };
 		B134B87A1E1D475800B83109 /* ticTacToeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B134B8791E1D475800B83109 /* ticTacToeTests.swift */; };
 		B134B8851E1D475800B83109 /* ticTacToeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B134B8841E1D475800B83109 /* ticTacToeUITests.swift */; };
+		B134B8991E1D497F00B83109 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = B134B8981E1D497F00B83109 /* circle.png */; };
+		B134B89B1E1D498500B83109 /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = B134B89A1E1D498500B83109 /* cross.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B103B9201E1E2F960096F6C9 /* popUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = popUpViewController.swift; sourceTree = "<group>"; };
+		B103B9261E1E7CA50096F6C9 /* board.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = board.png; sourceTree = "<group>"; };
+		B103B92C1E1E8C120096F6C9 /* closeButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = closeButton.png; sourceTree = "<group>"; };
+		B103B92E1E1EAAB10096F6C9 /* congrats.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = congrats.png; sourceTree = "<group>"; };
+		B103B9361E1EB6C00096F6C9 /* playAgainButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playAgainButton.png; sourceTree = "<group>"; };
+		B103B9381E1EB7C90096F6C9 /* BackToMenuButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackToMenuButton.png; sourceTree = "<group>"; };
 		B134B8611E1D475800B83109 /* ticTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ticTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B134B8641E1D475800B83109 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B134B8661E1D475800B83109 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +61,8 @@
 		B134B8801E1D475800B83109 /* ticTacToeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ticTacToeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B134B8841E1D475800B83109 /* ticTacToeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ticTacToeUITests.swift; sourceTree = "<group>"; };
 		B134B8861E1D475800B83109 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B134B8981E1D497F00B83109 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
+		B134B89A1E1D498500B83109 /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cross.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,9 +114,17 @@
 			isa = PBXGroup;
 			children = (
 				B134B8641E1D475800B83109 /* AppDelegate.swift */,
+				B103B9201E1E2F960096F6C9 /* popUpViewController.swift */,
 				B134B8661E1D475800B83109 /* ViewController.swift */,
 				B134B8681E1D475800B83109 /* Main.storyboard */,
 				B134B86B1E1D475800B83109 /* Assets.xcassets */,
+				B103B9381E1EB7C90096F6C9 /* BackToMenuButton.png */,
+				B103B9361E1EB6C00096F6C9 /* playAgainButton.png */,
+				B103B92E1E1EAAB10096F6C9 /* congrats.png */,
+				B134B89A1E1D498500B83109 /* cross.png */,
+				B103B92C1E1E8C120096F6C9 /* closeButton.png */,
+				B103B9261E1E7CA50096F6C9 /* board.png */,
+				B134B8981E1D497F00B83109 /* circle.png */,
 				B134B86D1E1D475800B83109 /* LaunchScreen.storyboard */,
 				B134B8701E1D475800B83109 /* Info.plist */,
 			);
@@ -232,7 +256,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B103B92F1E1EAAB10096F6C9 /* congrats.png in Resources */,
+				B134B89B1E1D498500B83109 /* cross.png in Resources */,
+				B103B9391E1EB7C90096F6C9 /* BackToMenuButton.png in Resources */,
+				B103B92D1E1E8C120096F6C9 /* closeButton.png in Resources */,
+				B103B9371E1EB6C00096F6C9 /* playAgainButton.png in Resources */,
 				B134B86F1E1D475800B83109 /* LaunchScreen.storyboard in Resources */,
+				B103B9271E1E7CA50096F6C9 /* board.png in Resources */,
+				B134B8991E1D497F00B83109 /* circle.png in Resources */,
 				B134B86C1E1D475800B83109 /* Assets.xcassets in Resources */,
 				B134B86A1E1D475800B83109 /* Main.storyboard in Resources */,
 			);
@@ -259,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B103B9211E1E2F960096F6C9 /* popUpViewController.swift in Sources */,
 				B134B8671E1D475800B83109 /* ViewController.swift in Sources */,
 				B134B8651E1D475800B83109 /* AppDelegate.swift in Sources */,
 			);
@@ -505,6 +537,7 @@
 				B134B88B1E1D475800B83109 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B134B88C1E1D475800B83109 /* Build configuration list for PBXNativeTarget "ticTacToeTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +546,7 @@
 				B134B88E1E1D475800B83109 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B134B88F1E1D475800B83109 /* Build configuration list for PBXNativeTarget "ticTacToeUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +555,7 @@
 				B134B8911E1D475800B83109 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
