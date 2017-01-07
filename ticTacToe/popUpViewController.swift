@@ -9,10 +9,11 @@
 import UIKit
 
 class popUpViewController: UIViewController {
-
+var winner = Int()
+    @IBOutlet weak var winnerOutlet: UIImageView!
    
-    @IBOutlet weak var closeButton: UIButton!
     
+    @IBOutlet weak var closeButton: UIButton!
     @IBOutlet weak var popUpView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,9 +22,26 @@ class popUpViewController: UIViewController {
         closeButton.isOpaque = true
         popUpView?.backgroundColor = UIColor(white: 1, alpha: 0.91)
         //popUpView.isOpaque = false
-        
+        if winner == 1
+        {
+            winnerOutlet.image = UIImage(named:"circle.png")
+            
+        }
+        else
+        {
+            winnerOutlet.image = UIImage(named:"cross.png")
+        }
     }
 
+    @IBAction func closeButton(_ sender: Any) {
+        self.dismiss(animated: true , completion: nil)
+    }
+    
+    
+    
+    @IBAction func playAgainButton(_ sender: Any)
+    {
+           }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -41,11 +41,13 @@ var gameState = [0,0,0,0,0,0,0,0,0]
         for combinations in winningCombinations
         {
             if gameState[combinations[0]] != 0 && gameState[combinations[0]] == gameState[combinations[1]] && gameState[combinations[1]] == gameState[combinations[2]] {
-            
-                print("win")
+            let winner = gameState[combinations[0]]
+                print(winner)
                 let destinationVC = self.storyboard?.instantiateViewController(withIdentifier: "popUpViewController") as! popUpViewController
                 show(destinationVC, sender: nil)
                 destinationVC.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+                destinationVC.winner = winner
+                
             }
             
             }
