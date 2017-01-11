@@ -15,21 +15,22 @@ var winner = Int()
     
     @IBOutlet weak var closeButton: UIButton!
     @IBOutlet weak var popUpView: UIView!
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         closeButton.setImage(UIImage(named:"closeButton.png"), for: [])
         closeButton.alpha = 1
         closeButton.isOpaque = true
-        popUpView?.backgroundColor = UIColor(white: 1, alpha: 0.91)
-        //popUpView.isOpaque = false
+        popUpView?.backgroundColor = UIColor(white: 1, alpha: 0.89)
+        
         if winner == 1
         {
-            winnerOutlet.image = UIImage(named:"circle.png")
+            winnerOutlet.image = UIImage(named:"cross.png")
             
         }
         else
         {
-            winnerOutlet.image = UIImage(named:"cross.png")
+            winnerOutlet.image = UIImage(named:"circle.png")
         }
     }
 
@@ -41,6 +42,9 @@ var winner = Int()
     
     @IBAction func playAgainButton(_ sender: Any)
     {
+        NotificationCenter.default.post(name: Notification.Name("NotificationIdentifier"), object: nil)
+        self.dismiss(animated: true, completion: nil)
+        
            }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

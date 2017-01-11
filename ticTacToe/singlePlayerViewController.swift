@@ -12,19 +12,19 @@ class singlePlayerViewController: UIViewController {
 var gameState = [0,0,0,0,0,0,0,0,0]
     let winningCombinations = [[0,1,2] , [3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]]
     var activePlayer = 1
-
-    @IBOutlet var buttonOutlet: Array<UIButton> = []
-    
+var activeGame = true
+   
+    @IBOutlet var buttonOutlet:Array <UIButton> = []
     override func viewDidLoad()
     {
         super.viewDidLoad()
-
+        NotificationCenter.default.addObserver(self, selector: #selector(singlePlayerViewController.recievedNotification(notification:)), name: NSNotification.Name("NotificationIdentifier"), object: nil)
         
     }
     @IBAction func buttonPressed(_ sender: AnyObject)
     {let activePosition = sender.tag - 1
        
-        if gameState[activePosition] == 0
+        if gameState[activePosition] == 0 && activeGame
         {            gameState[activePosition] = activePlayer
             if activePlayer == 1
             {
@@ -39,11 +39,14 @@ var gameState = [0,0,0,0,0,0,0,0,0]
 
 
         while gameState[random] != 0
-        {             let random = Int(arc4random_uniform(9))
+        {            random = Int(arc4random_uniform(9))
         }
-        print(random)
+       // print(random)
+        //    print(buttonOutlet[1].tag)
     buttonOutlet[random].setImage(UIImage(named:"circle.png"), for: [])
         gameState[random] = 2
+            
+            
                 activePlayer = 1
             }
             
@@ -52,11 +55,28 @@ var gameState = [0,0,0,0,0,0,0,0,0]
                 if gameState[combinations[0]] != 0 && gameState[combinations[0]] == gameState[combinations[1]] && gameState[combinations[1]] == gameState[combinations[2]] {
                     let winner = gameState[combinations[0]]
                     print(winner)
+                    activeGame = false
+                    let destinationVC = self.storyboard?.instantiateViewController(withIdentifier: "popUpViewController") as! popUpViewController
+                    destinationVC.winner = winner
+                    self.present(destinationVC , animated: true, completion: nil)
+                    
                 }
         }
         
     }
 
+    func recievedNotification(notification: NSNotification)
+    {
+        gameState = [0,0,0,0,0,0,0,0,0]
+        activePlayer = 1
+        activeGame = true
+        for i in 0..<9
+        {
+        buttonOutlet[i].setImage(nil, for: [])
+        
+    }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

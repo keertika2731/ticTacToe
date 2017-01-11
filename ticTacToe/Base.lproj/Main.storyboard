@@ -36,7 +36,6 @@
                                     <constraint firstAttribute="height" constant="87" id="rS2-gH-QYP"/>
                                     <constraint firstAttribute="width" constant="87" id="wwu-Bv-xLb"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="buttonPressed:" destination="O8K-Qi-pts" eventType="touchUpInside" id="CpN-Fa-ItC"/>
                                 </connections>
@@ -47,7 +46,6 @@
                                     <constraint firstAttribute="width" constant="87" id="5P2-yp-b0Z"/>
                                     <constraint firstAttribute="height" constant="87" id="vFk-QJ-mcG"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="buttonPressed:" destination="O8K-Qi-pts" eventType="touchUpInside" id="AYf-17-OPO"/>
                                 </connections>
@@ -58,7 +56,6 @@
                                     <constraint firstAttribute="width" constant="87" id="2fB-8b-nPd"/>
                                     <constraint firstAttribute="height" constant="87" id="xhA-5p-17S"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="buttonPressed:" destination="O8K-Qi-pts" eventType="touchUpInside" id="AiM-zb-mKJ"/>
                                 </connections>
@@ -69,7 +66,6 @@
                                     <constraint firstAttribute="width" constant="87" id="2ev-hx-C4g"/>
                                     <constraint firstAttribute="height" constant="87" id="y3d-rn-J76"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="buttonPressed:" destination="O8K-Qi-pts" eventType="touchUpInside" id="tgT-Uc-Q6s"/>
                                 </connections>
@@ -80,7 +76,6 @@
                                     <constraint firstAttribute="width" constant="87" id="5gP-21-fOr"/>
                                     <constraint firstAttribute="height" constant="87" id="BGJ-Cp-5zC"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="buttonPressed:" destination="O8K-Qi-pts" eventType="touchUpInside" id="viQ-Yo-3gv"/>
                                 </connections>
@@ -91,7 +86,6 @@
                                     <constraint firstAttribute="width" constant="87" id="RHz-P2-7Xy"/>
                                     <constraint firstAttribute="height" constant="87" id="T3D-7p-Qkq"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="buttonPressed:" destination="O8K-Qi-pts" eventType="touchUpInside" id="V6D-KQ-KTe"/>
                                 </connections>
@@ -102,7 +96,6 @@
                                     <constraint firstAttribute="width" constant="87" id="aXs-lo-MME"/>
                                     <constraint firstAttribute="height" constant="87" id="gnV-q6-agz"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="buttonPressed:" destination="O8K-Qi-pts" eventType="touchUpInside" id="ObF-M5-7yM"/>
                                 </connections>
@@ -113,7 +106,6 @@
                                     <constraint firstAttribute="width" constant="87" id="NOg-2H-WVN"/>
                                     <constraint firstAttribute="height" constant="87" id="Zeq-wf-guy"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="buttonPressed:" destination="O8K-Qi-pts" eventType="touchUpInside" id="ERz-CF-rfo"/>
                                 </connections>
@@ -124,7 +116,6 @@
                                     <constraint firstAttribute="height" constant="87" id="9NK-fa-wnA"/>
                                     <constraint firstAttribute="width" constant="87" id="Ol3-NI-sGD"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="buttonPressed:" destination="O8K-Qi-pts" eventType="touchUpInside" id="e4a-Ql-b3q"/>
                                 </connections>
@@ -155,15 +146,15 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outletCollection property="buttonOutlet" destination="UD0-Ec-Rpa" collectionClass="NSMutableArray" id="W6J-jJ-sXK"/>
-                        <outletCollection property="buttonOutlet" destination="wDu-0C-hKh" collectionClass="NSMutableArray" id="ZJ0-Pr-NxT"/>
-                        <outletCollection property="buttonOutlet" destination="zIN-ci-87D" collectionClass="NSMutableArray" id="Brh-lO-41Y"/>
-                        <outletCollection property="buttonOutlet" destination="JPk-a9-SdV" collectionClass="NSMutableArray" id="owc-tJ-EA8"/>
-                        <outletCollection property="buttonOutlet" destination="3Wt-NB-gdF" collectionClass="NSMutableArray" id="Nip-vY-EAO"/>
-                        <outletCollection property="buttonOutlet" destination="BpG-kU-w2p" collectionClass="NSMutableArray" id="3TP-Bj-ge3"/>
-                        <outletCollection property="buttonOutlet" destination="Igb-pM-s2O" collectionClass="NSMutableArray" id="TvC-3R-ml8"/>
-                        <outletCollection property="buttonOutlet" destination="0Ra-Iw-mSY" collectionClass="NSMutableArray" id="EMt-xg-cpZ"/>
-                        <outletCollection property="buttonOutlet" destination="2pD-P0-ZD6" collectionClass="NSMutableArray" id="pMR-2a-8Ci"/>
+                        <outletCollection property="buttonOutlet" destination="2pD-P0-ZD6" collectionClass="NSMutableArray" id="h2y-do-Pne"/>
+                        <outletCollection property="buttonOutlet" destination="UD0-Ec-Rpa" collectionClass="NSMutableArray" id="Qxi-JJ-Yq4"/>
+                        <outletCollection property="buttonOutlet" destination="wDu-0C-hKh" collectionClass="NSMutableArray" id="wpt-A6-zAo"/>
+                        <outletCollection property="buttonOutlet" destination="zIN-ci-87D" collectionClass="NSMutableArray" id="kHN-sC-EVa"/>
+                        <outletCollection property="buttonOutlet" destination="JPk-a9-SdV" collectionClass="NSMutableArray" id="x5A-UQ-x1g"/>
+                        <outletCollection property="buttonOutlet" destination="3Wt-NB-gdF" collectionClass="NSMutableArray" id="MKi-IO-1Rv"/>
+                        <outletCollection property="buttonOutlet" destination="BpG-kU-w2p" collectionClass="NSMutableArray" id="ppp-Pc-H4g"/>
+                        <outletCollection property="buttonOutlet" destination="Igb-pM-s2O" collectionClass="NSMutableArray" id="Kvq-Gm-F5J"/>
+                        <outletCollection property="buttonOutlet" destination="0Ra-Iw-mSY" collectionClass="NSMutableArray" id="bFQ-WP-PMd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ux5-Xc-EJ2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -304,6 +295,17 @@
                             <constraint firstItem="TYN-xp-0in" firstAttribute="leading" secondItem="lNX-PN-B83" secondAttribute="trailing" constant="41" id="w5d-cV-Aem"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outletCollection property="buttonOutlet" destination="lNX-PN-B83" collectionClass="NSMutableArray" id="Uad-jP-GZp"/>
+                        <outletCollection property="buttonOutlet" destination="TYN-xp-0in" collectionClass="NSMutableArray" id="ccJ-7n-NKh"/>
+                        <outletCollection property="buttonOutlet" destination="9D9-sA-0Sn" collectionClass="NSMutableArray" id="5hn-bJ-qX5"/>
+                        <outletCollection property="buttonOutlet" destination="SDh-Ke-Yh6" collectionClass="NSMutableArray" id="K5K-ZV-Un5"/>
+                        <outletCollection property="buttonOutlet" destination="KwV-dq-3mo" collectionClass="NSMutableArray" id="rJS-k9-d09"/>
+                        <outletCollection property="buttonOutlet" destination="hf2-st-cDQ" collectionClass="NSMutableArray" id="uBU-Qw-b3s"/>
+                        <outletCollection property="buttonOutlet" destination="SsT-DU-RNf" collectionClass="NSMutableArray" id="qts-Qb-95v"/>
+                        <outletCollection property="buttonOutlet" destination="Xu2-Uy-XR6" collectionClass="NSMutableArray" id="vMk-Bq-sNz"/>
+                        <outletCollection property="buttonOutlet" destination="Q9t-iB-clL" collectionClass="NSMutableArray" id="wTA-F2-92W"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
