@@ -22,6 +22,10 @@
 		B134B8851E1D475800B83109 /* ticTacToeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B134B8841E1D475800B83109 /* ticTacToeUITests.swift */; };
 		B134B8991E1D497F00B83109 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = B134B8981E1D497F00B83109 /* circle.png */; };
 		B134B89B1E1D498500B83109 /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = B134B89A1E1D498500B83109 /* cross.png */; };
+		B1EF7D7B1E26AE8E0008EF11 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B1EF7D7A1E26AE8E0008EF11 /* logo.png */; };
+		B1EF7D7D1E26AE930008EF11 /* multiplayerButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B1EF7D7C1E26AE930008EF11 /* multiplayerButton.png */; };
+		B1EF7D7F1E26AE9F0008EF11 /* singleplayerButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B1EF7D7E1E26AE9F0008EF11 /* singleplayerButton.png */; };
+		B1EF7D811E26AF290008EF11 /* openingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EF7D801E26AF290008EF11 /* openingViewController.swift */; };
 		B1FDB53E1E20E613000AF52D /* singlePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FDB53D1E20E613000AF52D /* singlePlayerViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +68,10 @@
 		B134B8861E1D475800B83109 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B134B8981E1D497F00B83109 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
 		B134B89A1E1D498500B83109 /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cross.png; sourceTree = "<group>"; };
+		B1EF7D7A1E26AE8E0008EF11 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		B1EF7D7C1E26AE930008EF11 /* multiplayerButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = multiplayerButton.png; sourceTree = "<group>"; };
+		B1EF7D7E1E26AE9F0008EF11 /* singleplayerButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = singleplayerButton.png; sourceTree = "<group>"; };
+		B1EF7D801E26AF290008EF11 /* openingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = openingViewController.swift; sourceTree = "<group>"; };
 		B1FDB53D1E20E613000AF52D /* singlePlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = singlePlayerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,8 +127,12 @@
 				B103B9201E1E2F960096F6C9 /* popUpViewController.swift */,
 				B134B8661E1D475800B83109 /* ViewController.swift */,
 				B134B8681E1D475800B83109 /* Main.storyboard */,
+				B1EF7D801E26AF290008EF11 /* openingViewController.swift */,
 				B1FDB53D1E20E613000AF52D /* singlePlayerViewController.swift */,
 				B134B86B1E1D475800B83109 /* Assets.xcassets */,
+				B1EF7D7A1E26AE8E0008EF11 /* logo.png */,
+				B1EF7D7E1E26AE9F0008EF11 /* singleplayerButton.png */,
+				B1EF7D7C1E26AE930008EF11 /* multiplayerButton.png */,
 				B103B9381E1EB7C90096F6C9 /* BackToMenuButton.png */,
 				B103B9361E1EB6C00096F6C9 /* playAgainButton.png */,
 				B103B92E1E1EAAB10096F6C9 /* congrats.png */,
@@ -261,7 +273,10 @@
 			files = (
 				B103B92F1E1EAAB10096F6C9 /* congrats.png in Resources */,
 				B134B89B1E1D498500B83109 /* cross.png in Resources */,
+				B1EF7D7F1E26AE9F0008EF11 /* singleplayerButton.png in Resources */,
+				B1EF7D7B1E26AE8E0008EF11 /* logo.png in Resources */,
 				B103B9391E1EB7C90096F6C9 /* BackToMenuButton.png in Resources */,
+				B1EF7D7D1E26AE930008EF11 /* multiplayerButton.png in Resources */,
 				B103B92D1E1E8C120096F6C9 /* closeButton.png in Resources */,
 				B103B9371E1EB6C00096F6C9 /* playAgainButton.png in Resources */,
 				B134B86F1E1D475800B83109 /* LaunchScreen.storyboard in Resources */,
@@ -295,6 +310,7 @@
 			files = (
 				B103B9211E1E2F960096F6C9 /* popUpViewController.swift in Sources */,
 				B134B8671E1D475800B83109 /* ViewController.swift in Sources */,
+				B1EF7D811E26AF290008EF11 /* openingViewController.swift in Sources */,
 				B1FDB53E1E20E613000AF52D /* singlePlayerViewController.swift in Sources */,
 				B134B8651E1D475800B83109 /* AppDelegate.swift in Sources */,
 			);

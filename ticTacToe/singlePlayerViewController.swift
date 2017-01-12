@@ -58,8 +58,8 @@ var activeGame = true
                     activeGame = false
                     let destinationVC = self.storyboard?.instantiateViewController(withIdentifier: "popUpViewController") as! popUpViewController
                     destinationVC.winner = winner
-                    self.present(destinationVC , animated: true, completion: nil)
-                    
+                   // self.present(destinationVC , animated: true, completion: nil)
+                    self.navigationController!.pushViewController(destinationVC, animated: true)
                 }
         }
         

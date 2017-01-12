@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="O8K-Qi-pts">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="VTp-0r-nZy">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -14,7 +14,7 @@
         <!--Single Player View Controller-->
         <scene sceneID="m2L-hQ-Hog">
             <objects>
-                <viewController id="O8K-Qi-pts" customClass="singlePlayerViewController" customModule="ticTacToe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="singlePlayerViewController" id="O8K-Qi-pts" customClass="singlePlayerViewController" customModule="ticTacToe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QTA-AH-HGz"/>
                         <viewControllerLayoutGuide type="bottom" id="Akb-wK-DXi"/>
@@ -164,7 +164,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ticTacToe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="multiPlayerViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="ticTacToe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -314,7 +314,7 @@
         <!--Pop Up View Controller-->
         <scene sceneID="WJN-kA-aYX">
             <objects>
-                <viewController storyboardIdentifier="popUpViewController" modalPresentationStyle="overCurrentContext" id="3Z1-MD-khU" customClass="popUpViewController" customModule="ticTacToe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="popUpViewController" modalTransitionStyle="partialCurl" modalPresentationStyle="overCurrentContext" id="3Z1-MD-khU" customClass="popUpViewController" customModule="ticTacToe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NMQ-ci-6Ec"/>
                         <viewControllerLayoutGuide type="bottom" id="zIV-X9-8AM"/>
@@ -326,6 +326,14 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AvW-ox-aWi">
                                 <rect key="frame" x="18" y="113" width="341" height="437"/>
                                 <subviews>
+                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xvU-Hm-RMu">
+                                        <rect key="frame" x="-24" y="-111" width="378" height="664"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="pQW-hK-0zV">
+                                            <rect key="frame" x="0.0" y="0.0" width="378" height="664"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </view>
+                                        <blurEffect style="light"/>
+                                    </visualEffectView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Eh7-Bx-LyH">
                                         <rect key="frame" x="109" y="107" width="110" height="110"/>
                                         <constraints>
@@ -333,23 +341,15 @@
                                             <constraint firstAttribute="width" constant="110" id="ywc-El-GBO"/>
                                         </constraints>
                                     </imageView>
-                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JEI-rr-rZu">
-                                        <rect key="frame" x="314" y="-19" width="40" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="QHz-iN-1ku"/>
-                                            <constraint firstAttribute="width" constant="40" id="RbR-MN-ILs"/>
-                                        </constraints>
-                                        <state key="normal" title="Button" image="closeButton.png"/>
-                                        <connections>
-                                            <action selector="closeButton:" destination="3Z1-MD-khU" eventType="touchUpInside" id="C9o-80-UBA"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OeI-39-3QH">
                                         <rect key="frame" x="99" y="374" width="147" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="OeI-39-3QH" secondAttribute="height" multiplier="151:40" constant="-4" id="YSN-2o-nZY"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="BackToMenuButton.png"/>
+                                        <connections>
+                                            <action selector="backToMenu:" destination="3Z1-MD-khU" eventType="touchUpInside" id="VHe-86-Obj"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WINS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dp0-NH-v9P">
                                         <rect key="frame" x="133" y="239" width="75" height="40"/>
@@ -379,20 +379,22 @@
                                     </imageView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="xvU-Hm-RMu" firstAttribute="leading" secondItem="AvW-ox-aWi" secondAttribute="leading" constant="-24" id="2Mo-lf-sam"/>
                                     <constraint firstItem="Eh7-Bx-LyH" firstAttribute="centerX" secondItem="Dp0-NH-v9P" secondAttribute="centerX" constant="-6.5" id="5jR-Cw-aVy"/>
-                                    <constraint firstAttribute="trailing" secondItem="JEI-rr-rZu" secondAttribute="trailing" constant="-13" id="7sz-bT-fDQ"/>
                                     <constraint firstAttribute="bottom" secondItem="OeI-39-3QH" secondAttribute="bottom" constant="23" id="83J-RH-QnU"/>
                                     <constraint firstItem="OeI-39-3QH" firstAttribute="leading" secondItem="AvW-ox-aWi" secondAttribute="leading" constant="99" id="8aR-xL-K7e"/>
                                     <constraint firstItem="uOe-sH-SGu" firstAttribute="leading" secondItem="AvW-ox-aWi" secondAttribute="leading" constant="82" id="Ewr-NE-8Ci"/>
+                                    <constraint firstAttribute="bottom" secondItem="xvU-Hm-RMu" secondAttribute="bottom" constant="-116" id="FU9-SB-wir"/>
                                     <constraint firstItem="tHs-sG-q03" firstAttribute="top" secondItem="AvW-ox-aWi" secondAttribute="top" id="Ja5-UV-8KO"/>
                                     <constraint firstItem="Dp0-NH-v9P" firstAttribute="top" secondItem="Eh7-Bx-LyH" secondAttribute="bottom" constant="22" id="Kb6-Yz-1yI"/>
+                                    <constraint firstItem="xvU-Hm-RMu" firstAttribute="top" secondItem="AvW-ox-aWi" secondAttribute="top" constant="-111" id="NuS-nH-4q7"/>
                                     <constraint firstItem="OeI-39-3QH" firstAttribute="top" secondItem="uOe-sH-SGu" secondAttribute="bottom" constant="8" symbolic="YES" id="RWQ-RR-9DH"/>
-                                    <constraint firstItem="JEI-rr-rZu" firstAttribute="top" secondItem="AvW-ox-aWi" secondAttribute="top" constant="-19" id="TtM-ex-pal"/>
                                     <constraint firstItem="tHs-sG-q03" firstAttribute="leading" secondItem="AvW-ox-aWi" secondAttribute="leading" constant="15" id="URO-1M-t4v"/>
                                     <constraint firstItem="uOe-sH-SGu" firstAttribute="trailing" secondItem="OeI-39-3QH" secondAttribute="trailing" id="WgY-Aa-vGx"/>
                                     <constraint firstItem="Eh7-Bx-LyH" firstAttribute="centerX" secondItem="AvW-ox-aWi" secondAttribute="centerX" constant="-6.5" id="d4d-9L-n4W"/>
                                     <constraint firstItem="tHs-sG-q03" firstAttribute="centerX" secondItem="Eh7-Bx-LyH" secondAttribute="centerX" constant="6.5" id="jSm-Jv-5X1"/>
                                     <constraint firstItem="Dp0-NH-v9P" firstAttribute="centerX" secondItem="OeI-39-3QH" secondAttribute="centerX" constant="-2" id="qHB-Ig-6R4"/>
+                                    <constraint firstAttribute="trailing" secondItem="xvU-Hm-RMu" secondAttribute="trailing" constant="-13" id="rx1-hb-vTz"/>
                                     <constraint firstItem="uOe-sH-SGu" firstAttribute="top" secondItem="Dp0-NH-v9P" secondAttribute="bottom" constant="47" id="vRl-bS-OvB"/>
                                 </constraints>
                             </view>
@@ -404,22 +406,100 @@
                             <constraint firstItem="AvW-ox-aWi" firstAttribute="leading" secondItem="2KK-Gi-F55" secondAttribute="leadingMargin" constant="2" id="fP1-9m-OI1"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="OK9-Bu-s98"/>
                     <connections>
-                        <outlet property="closeButton" destination="JEI-rr-rZu" id="cd9-Et-e5Q"/>
                         <outlet property="popUpView" destination="AvW-ox-aWi" id="5aq-vi-7ld"/>
                         <outlet property="winnerOutlet" destination="Eh7-Bx-LyH" id="on8-0z-Zy2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xOj-sr-gna" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="516" y="212.74362818590706"/>
+            <point key="canvasLocation" x="2394.4000000000001" y="212.74362818590706"/>
+        </scene>
+        <!--Opening View Controller-->
+        <scene sceneID="nNk-CE-SfS">
+            <objects>
+                <viewController id="qrZ-b2-KPi" customClass="openingViewController" customModule="ticTacToe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SOY-Vo-v6B"/>
+                        <viewControllerLayoutGuide type="bottom" id="m8G-jq-KPU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dJO-hg-BMv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="a82-3J-FlG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nlP-3l-Yhm">
+                                <rect key="frame" x="72" y="534" width="230" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="4cI-Ai-kaO"/>
+                                    <constraint firstAttribute="height" constant="54" id="GPg-kt-URg"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="multiplayerButton.png"/>
+                                <connections>
+                                    <action selector="multiPlayerButton:" destination="qrZ-b2-KPi" eventType="touchUpInside" id="Rlk-nc-UJN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJD-He-r5x">
+                                <rect key="frame" x="72" y="593" width="230" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="cxQ-RS-C1P"/>
+                                    <constraint firstAttribute="width" constant="230" id="fLm-sW-0gB"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="singleplayerButton.png"/>
+                                <connections>
+                                    <action selector="singlePlayer:" destination="qrZ-b2-KPi" eventType="touchUpInside" id="Q0k-Jg-l7s"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="a82-3J-FlG" secondAttribute="trailing" id="GA4-cS-eBh"/>
+                            <constraint firstItem="m8G-jq-KPU" firstAttribute="top" secondItem="a82-3J-FlG" secondAttribute="bottom" id="Gwm-eL-bjE"/>
+                            <constraint firstItem="a82-3J-FlG" firstAttribute="centerX" secondItem="dJO-hg-BMv" secondAttribute="centerX" id="T1v-Yk-rux"/>
+                            <constraint firstItem="a82-3J-FlG" firstAttribute="top" secondItem="dJO-hg-BMv" secondAttribute="top" id="TzA-OI-oHS"/>
+                            <constraint firstItem="a82-3J-FlG" firstAttribute="centerY" secondItem="dJO-hg-BMv" secondAttribute="centerY" id="Vgi-GM-6ZU"/>
+                            <constraint firstItem="TJD-He-r5x" firstAttribute="centerX" secondItem="dJO-hg-BMv" secondAttribute="centerX" id="e2C-Qz-l2y"/>
+                            <constraint firstItem="m8G-jq-KPU" firstAttribute="top" secondItem="TJD-He-r5x" secondAttribute="bottom" constant="20" id="nUf-ly-3qc"/>
+                            <constraint firstItem="a82-3J-FlG" firstAttribute="leading" secondItem="dJO-hg-BMv" secondAttribute="leading" id="pom-pY-Sxx"/>
+                            <constraint firstItem="TJD-He-r5x" firstAttribute="top" secondItem="nlP-3l-Yhm" secondAttribute="bottom" constant="5" id="qEM-qZ-Fp8"/>
+                            <constraint firstItem="nlP-3l-Yhm" firstAttribute="centerX" secondItem="dJO-hg-BMv" secondAttribute="centerX" id="qjJ-7h-jW8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jK8-dh-ZaM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r8E-CX-3fd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1198" y="-653"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rvd-eb-tl7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VTp-0r-nZy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="66v-ZT-8hZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="qrZ-b2-KPi" kind="relationship" relationship="rootViewController" id="Ycz-Z3-5cS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RRH-L8-6da" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="223" y="-652"/>
         </scene>
     </scenes>
     <resources>
         <image name="BackToMenuButton.png" width="389" height="118"/>
         <image name="board.png" width="712" height="749"/>
-        <image name="closeButton.png" width="1049" height="1050"/>
         <image name="congrats.png" width="468" height="222"/>
+        <image name="logo.png" width="833" height="833"/>
+        <image name="multiplayerButton.png" width="525" height="137"/>
         <image name="playAgainButton.png" width="428" height="118"/>
+        <image name="singleplayerButton.png" width="525" height="137"/>
     </resources>
 </document>
